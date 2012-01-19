@@ -13,7 +13,7 @@ set nofoldenable
 set cursorline
 set hlsearch
 set laststatus=2
-set gfn=Monaco:h13
+set gfn=Monaco:h12
 hi Search guibg=Khaki guifg=Black gui=NONE
 
 " Clear search results when hitting space
