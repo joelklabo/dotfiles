@@ -12,6 +12,8 @@ set t_Co=256
 set nofoldenable
 set cursorline
 set hlsearch
+set laststatus=2
+set gfn=Monaco:h13
 hi Search guibg=Khaki guifg=Black gui=NONE
 
 " Clear search results when hitting space
@@ -25,3 +27,10 @@ autocmd BufEnter * lcd %:p:h
 
 " automatically make files with bin executable
 au bufwritepost * if getline(1) =~ "^#!" | if getline(1) =~ "/bin/" | silent !chmod a+x <afile> | endif | endif
+
+colorscheme molokai 
+
+if has("gui_running")
+  colorscheme cobalt 
+endif
+
