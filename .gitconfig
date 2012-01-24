@@ -1,0 +1,16 @@
+[user]
+        name = Joel Klabo 
+        email = joelklabo@gmail.com 
+
+[color]
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+[core]
+        editor = mvim
+[merge]
+        tool = vimdiff
+[alias]
+        co = checkout
+
