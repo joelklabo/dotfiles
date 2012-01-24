@@ -1,16 +1,11 @@
 export DISPLAY=:0.0
 
 
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:~/src/nave:$PATH
 export CLICOLOR=1
+
 # use yellow for directories
 export LSCOLORS=dxfxcxdxbxegedabagacad
-
-# TeX
-export PATH=/usr/local/texlive/2011/bin/universal-darwin:$PATH 
-
-# MIT Scheme
-export MIT_SCHEME_EXE=/Applications/mit-scheme.app
 
 alias ll='ls -laF'
 
@@ -43,7 +38,7 @@ alias gc='git commit -v'
 alias gca='git commit -v -a'
 alias gb='git branch'
 alias gba='git branch -a'
-alias glog='git log --oneline --decorate'
+alias glog='git log --graph --decorate'
 alias glogme='git log --name-status --author=$USER'
 alias gpick='git cherry-pick'
 alias gmaster='git co master'
