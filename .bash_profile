@@ -9,6 +9,8 @@ export LSCOLORS=dxfxcxdxbxegedabagacad
 
 alias ll='ls -laF'
 
+alias vim='mvim'
+
 # For JSYammerDesktop
 export ADL_PATH=/users/jklabo/AdobeAIRSDK/bin/adl
 export ADT_PATH=/users/jklabo/AdobeAIRSDK/bin/adt
