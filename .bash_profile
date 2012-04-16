@@ -115,6 +115,12 @@ export DISPLAY=:0.0
 export PATH=/usr/local/bin:/usr/local/sbin:~/src/nave:$PATH
 export CLICOLOR=1
 
+# Find then vim
+alias fv='find-then-vim'
+
+# Node dev port
+export DEV_MODE=true
+
 # use yellow for directories
 export LSCOLORS=dxfxcxdxbxegedabagacad
 
@@ -125,10 +131,13 @@ alias vv='ssh vagrant@www.yammer.dev'
 alias vim='mvim'
 
 # For JSYammerDesktop
+
+alias rn='cd $DESKTOP_HOME && ./scripts/run-debug.sh -d staging-local'
+
 export ADL_PATH=/users/jklabo/AdobeAIRSDK/bin/adl
 export ADT_PATH=/users/jklabo/AdobeAIRSDK/bin/adt
 export ACOMPC_BIN=/users/jklabo/AdobeFlexSDK/bin/acompc
-export YAMJS_HOME=/Users/jklabo/src/yamjs
+export YAMJS_HOME=/Users/jklabo/src/yamjsdesktop
 export DESKTOP_HOME=/Users/jklabo/src/JSYammerDesktop
 export WORKFEED_DIR=/Users/jklabo/src/workfeed
 export WORKFEED_HOST=www.jklabo.local
@@ -141,6 +150,7 @@ alias gistp="gist -p"
 alias wf='cd ~/src/workfeed'
 alias y='cd ~/src/yamjsdesktop'
 alias j='cd ~/src/JSYammerDesktop'
+alias v='cd ~/src/vagrant-dev-environment'
 
 # For Git, from https://docs.google.com/a/yammer-inc.com/Doc?docid=0AcGgqbKaXXn_ZGZtemttcWhfNDJmbng4Z3RkNA&hl=en
 alias gss='git submodule --quiet foreach "(git status -a > /dev/null && echo \$path) || true"'

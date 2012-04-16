@@ -1,4 +1,5 @@
 --ignore-dir=dist
 --ignore-dir=build
+--ignore-dir=spec
 --ignore-dir=vendor
---ignore-case
+--ignore-dir=application_support
