@@ -3,9 +3,9 @@
 #
 # copies dotfiles to your home directory
 
-cp -rf .bash_profile ~/
-cp -rf .vim ~/
-cp -rf .vimrc ~/
-cp -rf .gitconfig ~/
+cp -rf .bash_profile ~/.bash_profile
+cp -rf .vim ~/.vim
+cp -rf .vimrc ~/.vimrc
+cp -rf .gitconfig ~/.gitconfig
 
-source ~/.bash_profile
+echo "Files are copied, don't forget to run source ~/.bash_profile"

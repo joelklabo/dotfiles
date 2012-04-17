@@ -151,6 +151,8 @@ alias wf='cd ~/src/workfeed'
 alias y='cd ~/src/yamjsdesktop'
 alias j='cd ~/src/JSYammerDesktop'
 alias v='cd ~/src/vagrant-dev-environment'
+alias b='cd ~/src/blerg'
+alias d='cd ~/src/dotfiles'
 
 # For Git, from https://docs.google.com/a/yammer-inc.com/Doc?docid=0AcGgqbKaXXn_ZGZtemttcWhfNDJmbng4Z3RkNA&hl=en
 alias gss='git submodule --quiet foreach "(git status -a > /dev/null && echo \$path) || true"'
