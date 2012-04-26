@@ -148,7 +148,7 @@ export GITHUB_TOKEN="5fe941a00f17724f870da82e06106a87"
 alias gistp="gist -p"
 
 alias wf='cd ~/src/workfeed'
-alias y='cd ~/src/yamjsdesktop'
+alias y='cd ~/src/yamjs'
 alias j='cd ~/src/JSYammerDesktop'
 alias v='cd ~/src/vagrant-dev-environment'
 alias b='cd ~/src/blerg'
