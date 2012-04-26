@@ -9,8 +9,9 @@
         status = auto
 [core]
         editor = mvim
+        mergeoptions = --no-ff
+        
 [merge]
         tool = vimdiff
 [alias]
         co = checkout
-
