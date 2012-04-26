@@ -3,3 +3,4 @@
 --ignore-dir=spec
 --ignore-dir=vendor
 --ignore-dir=application_support
+--ignore-dir=node_modules
