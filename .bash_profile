@@ -183,5 +183,3 @@ alias sgc='script/generate controller'
 alias sgs='script/generate scaffold'
 
 alias psx='ps auxw | $1'
-
-
