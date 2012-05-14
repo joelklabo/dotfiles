@@ -156,7 +156,7 @@ alias d='cd ~/src/dotfiles'
 
 # For Git, from https://docs.google.com/a/yammer-inc.com/Doc?docid=0AcGgqbKaXXn_ZGZtemttcWhfNDJmbng4Z3RkNA&hl=en
 alias gss='git submodule --quiet foreach "(git status -a > /dev/null && echo \$path) || true"'
-alias gst='git status'
+alias gst='git status --short'
 alias gl='git pull'
 alias gp='git push'
 alias gd='git diff --word-diff'
