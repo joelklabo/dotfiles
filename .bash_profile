@@ -110,6 +110,12 @@ function parse_git_branch {
 
 PS1="\[\033[$Blue\][\[\033[$BRed\]\h\[\033[$Blue\]] \[\033[$BYellow\]\w \[\033[$BBlue\]\[\033[$BGreen\]\$(parse_git_branch)\[\033[$BCyan\[\033[$BRed ⇶ \[\033[$Color_Off\]"
 
+# Git bash completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+
+
 export DISPLAY=:0.0
 
 export PATH=/usr/local/bin:/usr/local/sbin:~/src/nave:$PATH
