@@ -108,7 +108,7 @@ function parse_git_branch {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/( \1$(parse_git_dirty) )/"
 }
 
-PS1="\[\033[$BBlue\][\[\033[$BRed\]\h\[\033[$BBlue\]] \[\033[$BYellow\]\w \[\033[$BBlue\]\[\033[$BGreen\]\$(parse_git_branch)\[\033[$BCyan\[\033[$BRed ⇶ \[\033[$Color_Off\]"
+PS1="\[\033[$Blue\][\[\033[$BRed\]\h\[\033[$Blue\]] \[\033[$BYellow\]\w \[\033[$BBlue\]\[\033[$BGreen\]\$(parse_git_branch)\[\033[$BCyan\[\033[$BRed ⇶ \[\033[$Color_Off\]"
 
 export DISPLAY=:0.0
 
