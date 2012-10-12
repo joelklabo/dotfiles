@@ -105,10 +105,10 @@ function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo " ⚒"
 }
 function parse_git_branch {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/( \1$(parse_git_dirty) )/"
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[ \1$(parse_git_dirty) ]/"
 }
 
-PS1="\[\033[$Blue\][\[\033[$BRed\]\h\[\033[$Blue\]] \[\033[$BYellow\]\w \[\033[$BBlue\]\[\033[$BGreen\]\$(parse_git_branch)\[\033[$BCyan\[\033[$BRed ⇶ \[\033[$Color_Off\]"
+PS1="\[\033[$Blue\][\[\033[$BRed\]\h\[\033[$Blue\]] \[\033[$BYellow\]\w \[\033[$BBlue\]\[\033[$BGreen\]\$(parse_git_branch)\[\033[$BCyan\[\033[$BRed  \[\033[$Color_Off\]\n➤ "
 
 # Git bash completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -123,6 +123,9 @@ export CLICOLOR=1
 
 # Find then vim
 alias fv='find-then-vim'
+
+# Jumpssh
+alias jumpssh='ssh -A -t jumphost-001.sjc1.yammer.com ssh $@'
 
 # Node dev port
 export DEV_MODE=true
