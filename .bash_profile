@@ -118,6 +118,8 @@ fi
 
 export DISPLAY=:0.0
 
+export HISTTIMEFORMAT="%F %T "
+
 export PATH=/usr/local/bin:/usr/local/sbin:~/src/nave:$PATH
 export CLICOLOR=1
 
