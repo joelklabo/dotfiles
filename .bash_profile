@@ -110,12 +110,6 @@ function parse_git_branch {
 
 PS1="\[\033[$Blue\][\[\033[$BRed\]\h\[\033[$Blue\]] \[\033[$Color_Off\](\t) \[\033[$Yellow\]\w \[\033[$Blue\]\[\033[$Green\]\$(parse_git_branch)\[\033[$Cyan\[\033[$Red  \[\033[$Color_Off\]\n➤ "
 
-# Git bash completion
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
-
-
 export DISPLAY=:0.0
 
 export HISTTIMEFORMAT="%F %T "
