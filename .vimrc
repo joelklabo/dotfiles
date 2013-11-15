@@ -26,5 +26,4 @@ ino jj <esc>
 
 " change path to wherever current file is
 autocmd BufEnter * lcd %:p:h
-
-colorscheme solarized 
+colorscheme molokai 
